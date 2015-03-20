@@ -75,12 +75,15 @@ function goFullScreen(){
     canvas = document.getElementById("right");
     canvas.width = canvasWidth;
     canvas.height = canvasHeight;
-    if(wrapper.requestFullScreen)
-        wrapper.requestFullScreen();
-    else if(wrapper.webkitRequestFullScreen)
-        wrapper.webkitRequestFullScreen();
-    else if(wrapper.mozRequestFullScreen)
-        wrapper.mozRequestFullScreen();
+
+    // Do not attempt full screen for demo purposes
+
+    // if(wrapper.requestFullScreen)
+    //     wrapper.requestFullScreen();
+    // else if(wrapper.webkitRequestFullScreen)
+    //     wrapper.webkitRequestFullScreen();
+    // else if(wrapper.mozRequestFullScreen)
+    //     wrapper.mozRequestFullScreen();
     //BEGIN MAIN SCRIPT
     start();
 }
